@@ -1,0 +1,31 @@
+<div>
+    <h1 style="color: blue;">Tabla de multiplicar</h1>
+    <form #tablaForm="ngForm">
+        <label>Numero a multiplicar</label>
+        <input type="number" name="cajanumero" #cajanumero />
+        <button (click)="multiplicarNumeros()">
+            Mostrar multiplicacion
+        </button>
+    </form>
+<hr>
+    <div *ngIf="numeros.length > 0">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Operacion</th>
+                    <th>Resultado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let num of numeros; let i = index">
+                    <td>
+                        {{ numero }} * {{i + 1}}
+                    </td>
+                    <td>
+                        {{num}}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

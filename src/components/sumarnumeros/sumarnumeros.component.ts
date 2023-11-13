@@ -10,7 +10,7 @@ export class SumarNumerosComponent {
   @ViewChild('cajanumero1') cajaNumero1Ref: ElementRef;
   @ViewChild('cajanumero2') cajaNumero2Ref: ElementRef;
 
-  public suma: number;
+  public suma!: number;
 
   //En angular todas las propiedades deben ser instanciadas/iniciadas con un valor
   //Los objetos de referencia deben indicar que son un nuevo objeto y un valor por defecto para dicho objeto
